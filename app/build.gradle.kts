@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.calculadora"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.calculadora"
-        minSdk = 24
-        targetSdk = 33
+        minSdk = 21
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -32,6 +32,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+
+    viewBinding {
+        enable = true
     }
 }
 
