@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity() {
             val result: Double = evaluate(str)
             val r = result.toString()
             binding.pantallaSolucion.text = r
-            binding.pantallaDatos.text = str
+            binding.pantallaDatos.text = if (str.isNotEmpty()) str else "No hay expresión para evaluar"
         }
 
 

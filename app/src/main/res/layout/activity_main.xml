@@ -8,31 +8,30 @@
 
 
     <TextView
-        android:id="@+id/pantalla_datos"
+        android:id="@+id/pantallaDatos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/botones"
+        android:layout_height="120dp"
+        android:layout_above="@id/pantallaSolucion"
+        android:layout_marginBottom="0dp"
         android:background="#3c353f"
-        android:paddingHorizontal="15dp"
-        android:paddingVertical="40dp"
         android:text=""
         android:textAlignment="viewEnd"
         android:textColor="#6E6A6A"
         android:textSize="30dp"
         android:textStyle="bold" />
+
     <TextView
-        android:id="@+id/pantalla_solucion"
+        android:id="@+id/pantallaSolucion"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:text=""
         android:textAlignment="viewEnd"
         android:layout_above="@id/botones"
         android:textColor="#FFFFFF"
         android:background="#3c353f"
-        android:paddingHorizontal="15dp"
-        android:paddingVertical="40dp"
         android:textStyle="bold"
-        android:textSize="60sp"/>
+        android:paddingTop="50dp"
+        android:textSize="50sp"/>
 
     <LinearLayout
         android:id="@+id/botones"
@@ -276,16 +275,16 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/botonC"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_margin="5dp"
-                app:iconSize="40dp"
-                app:icon="@drawable/baseline_backspace_24"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:textColor="@color/white"
                 android:backgroundTint="#424242"
-                android:textSize="32dp"
-                app:cornerRadius="50dp"/>
+                android:textColor="@color/white"
+                app:cornerRadius="50dp"
+                app:icon="@drawable/baseline_backspace_24"
+                app:iconSize="40dp"
+                tools:ignore="SpeakableTextPresentCheck" />
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/botonIgual"
                 style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
